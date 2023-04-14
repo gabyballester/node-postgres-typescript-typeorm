@@ -1,0 +1,31 @@
+{
+   "name": "2023-04-v1-node-postgres-typescript-typeorm",
+   "version": "1.0.0",
+   "main": "index.js",
+   "license": "MIT",
+   "description": "base project",
+   "repository": "https://github.com/gabyballester/node-postgres-typescript-typeorm.git",
+   "author": "gabyballester",
+   "devDependencies": {
+      "@types/config": "^3.3.0",
+      "@types/express": "^4.17.17",
+      "@types/node": "^18.15.11",
+      "ts-node": "^10.9.1",
+      "ts-node-dev": "^2.0.0",
+      "typescript": "^5.0.4"
+   },
+   "dependencies": {
+      "config": "^3.3.9",
+      "dotenv": "^16.0.3",
+      "envalid": "^7.3.1",
+      "express": "^4.18.2",
+      "pg": "^8.10.0",
+      "redis": "^4.6.5",
+      "reflect-metadata": "^0.1.13",
+      "typeorm": "^0.3.14"
+   },
+   "scripts": {
+      "start": "ts-node-dev --respawn --transpile-only --exit-child src/app.ts",
+      "typeorm": "typeorm-ts-node-commonjs"
+   }
+}
